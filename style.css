@@ -14,15 +14,13 @@ h1,h2,h3,h4{
 
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 html{
     background-color: var(--BG-color);
-}
-
-input[type="text"], input[type="number"]{
-    width: 18rem;
-    height: 1.5rem;
+    font-family: Roboto;
 }
 
 body{
@@ -37,6 +35,8 @@ header{
     display: flex;
     gap: 0.5rem;
     justify-content: right;
+    font-size: .75rem;
+    align-items: center;
 }
 
 #forgot{
@@ -61,19 +61,20 @@ main{
 form{
     background-color: white;
     width: 22rem;
-    height: 30rem;
-    border: 0.1rem solid lightgrey;
-    padding: 1rem;
+    height: auto;
+    border: 0.01rem solid lightgrey;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 form div{
     width: 18rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     margin-bottom: 1rem;
     gap: .5rem;
 }
@@ -82,9 +83,41 @@ form li{
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
+    width: 100%;
     gap: .5rem;
 }
 
-#createAccount{
-    
+form input[type="text"], form input[type="number"]{
+    width: 100%;
+    height: 1.5rem;
+}
+
+#createAccount-btn{
+    background-color: var(--btn-color);
+    color: white;
+    border: 0;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 2rem;
+    margin: 1em 0;
+}
+
+#privacyStatement{
+    text-align: center;
+}
+
+/* ----- FOOTER  ------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    align-self: center;
+    width: 50%
+}
+
+footer ul{
+    display: flex;
+    gap: 1rem;
 }
